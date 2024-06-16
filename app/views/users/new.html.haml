@@ -1,0 +1,59 @@
+= form_for @user, url: users_path, html: { class: "form" } do |form|
+  .text-center.mb-11
+    %h1.text-dark.fw-bolder.mb-3 Sign Up
+    .text-gray-500.fw-semibold.fs-6 PayFrame Business Platform
+
+  .fv-row.mb-8
+    = form.hidden_field :manual, value: true
+    = form.text_field :first_name, class: "form-control bg-transparent", autocomplete: "off", placeholder: "First Name", type: "text", required: true
+    .invalid-feedback Please fill out this field.
+
+  .fv-row.mb-8
+    = form.text_field :last_name, class: "form-control bg-transparent", autocomplete: "off", placeholder: "Last Name", type: "text", required: true
+    .invalid-feedback Please fill out this field.
+
+  .fv-row.mb-8
+    / = form.fields_for :emails do |email_fields|
+    .control-group
+      / = email_fields.label :address, 'Email', class: 'control-label'
+      .controls
+        .input-icon.left
+          %i.icon-envelope
+          = form.text_field  :email, class: 'form-control bg-transparent', autocomplete: "off", placeholder: "Email", type: "text", required: true
+          .invalid-feedback Please fill out this field.
+
+  .fv-row.mb-8{"data-kt-password-meter" => "true"}
+    .mb-1.position-relative.mb-3
+      = form.password_field :password, class: "form-control bg-transparent", autocomplete: "off", placeholder: "Password", type: "password", required: true
+      .invalid-feedback Please fill out this field.
+      %span.btn.btn-sm.btn-icon.position-absolute.translate-middle.top-50.end-0.me-n2{"data-kt-password-meter-control" => "visibility"}
+        %i.ki-outline.ki-eye-slash.fs-2
+        %i.ki-outline.ki-eye.fs-2.d-none
+    .d-flex.align-items-center.mb-3{"data-kt-password-meter-control" => "highlight"}
+      .flex-grow-1.bg-secondary.bg-active-success.rounded.h-5px.me-2
+      .flex-grow-1.bg-secondary.bg-active-success.rounded.h-5px.me-2
+      .flex-grow-1.bg-secondary.bg-active-success.rounded.h-5px.me-2
+      .flex-grow-1.bg-secondary.bg-active-success.rounded.h-5px
+    .text-muted Use 8 or more characters with a mix of letters, numbers, symbols.
+
+  .fv-row.mb-8
+    = form.password_field :password_confirmation, class: "form-control bg-transparent", autocomplete: "off", placeholder: "Repeat Password", type: "password", required: true
+    .invalid-feedback Please fill out this field.
+
+  .fv-row.mb-8
+    %label.form-check.form-check-inline
+      = form.check_box :terms, checked: true, value: 1
+      %span.form-check-label.fw-semibold.text-gray-700.fs-base.ms-1
+        I Accept the
+        / %a.ms-1.link-primary{href: terms_url(subdomain: 'www')} Terms
+
+  .d-grid.mb-10
+    = form.submit "Submit", class: 'btn  btn-primary'
+  /   = recaptcha_v2_invisible(form, 'Create Account', class: 'btn btn-primary pull-right')
+  /   %span.indicator-progress
+  /     Please wait...
+  /     %span.spinner-border.spinner-border-sm.align-middle.ms-2
+
+  .text-gray-500.text-center.fw-semibold.fs-6
+    Already have an Account?
+    %a.link-primary.fw-semibold{href: "/login"} Sign in

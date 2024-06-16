@@ -1,0 +1,25 @@
+= form_tag sessions_path, class: 'form w-100' do
+  .text-center.mb-11
+    %h1.text-dark.fw-bolder.mb-3 Sign In
+    .text-gray-500.fw-semibold.fs-6 PayFrame Business Platform
+
+  .fv-row.mb-8
+    / = hidden_field_tag :target, params[:target]
+    = text_field_tag :email, params[:email], class: 'form-control bg-transparent', placeholder: "Email", required: true
+
+  .fv-row.mb-3
+    = password_field_tag :password, nil, class: 'form-control bg-transparent', placeholder: "Password", required: true
+
+  / .d-flex.flex-stack.flex-wrap.gap-3.fs-base.fw-semibold.mb-8
+  /   %div
+  /   %a.link-primary{href: new_password_path} Forgot Password ?
+  / - if @danger_activity.recaptcha_required?
+  /   .control-group{style: 'margin-left: -5px;'}
+  /     = recaptcha_tags
+
+  .d-grid.mb-10
+    = submit_tag 'Submit', class: 'btn btn-primary pull-right'
+
+  .text-gray-500.text-center.fw-semibold.fs-6
+    Not a Member yet?
+    %a.link-primary{href: new_user_path} Sign up

@@ -1,0 +1,20 @@
+current directory: /home/nikhil/Downloads/Projects/RentEase/vendor/bundle/ruby/3.2.0/gems/strscan-3.1.0/ext/strscan
+/home/nikhil/.rvm/rubies/ruby-3.2.2/bin/ruby extconf.rb
+checking for onig_region_memsize() in ruby.h... yes
+checking for rb_reg_onig_match() in ruby.h... no
+creating Makefile
+
+current directory: /home/nikhil/Downloads/Projects/RentEase/vendor/bundle/ruby/3.2.0/gems/strscan-3.1.0/ext/strscan
+make DESTDIR\= sitearchdir\=./.gem.20240616-5898-ymb1ph sitelibdir\=./.gem.20240616-5898-ymb1ph clean
+
+current directory: /home/nikhil/Downloads/Projects/RentEase/vendor/bundle/ruby/3.2.0/gems/strscan-3.1.0/ext/strscan
+make DESTDIR\= sitearchdir\=./.gem.20240616-5898-ymb1ph sitelibdir\=./.gem.20240616-5898-ymb1ph
+compiling strscan.c
+linking shared-object strscan.so
+
+current directory: /home/nikhil/Downloads/Projects/RentEase/vendor/bundle/ruby/3.2.0/gems/strscan-3.1.0/ext/strscan
+make DESTDIR\= sitearchdir\=./.gem.20240616-5898-ymb1ph sitelibdir\=./.gem.20240616-5898-ymb1ph install
+/usr/bin/install -m 0755 strscan.so ./.gem.20240616-5898-ymb1ph
+
+current directory: /home/nikhil/Downloads/Projects/RentEase/vendor/bundle/ruby/3.2.0/gems/strscan-3.1.0/ext/strscan
+make DESTDIR\= sitearchdir\=./.gem.20240616-5898-ymb1ph sitelibdir\=./.gem.20240616-5898-ymb1ph clean

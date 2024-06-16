@@ -1,0 +1,19 @@
+current directory: /home/nikhil/Downloads/Projects/RentEase/vendor/bundle/ruby/3.2.0/gems/hamlit-3.0.3/ext/hamlit
+/home/nikhil/.rvm/rubies/ruby-3.2.2/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/nikhil/Downloads/Projects/RentEase/vendor/bundle/ruby/3.2.0/gems/hamlit-3.0.3/ext/hamlit
+make DESTDIR\= sitearchdir\=./.gem.20240616-5898-4lw8ai sitelibdir\=./.gem.20240616-5898-4lw8ai clean
+
+current directory: /home/nikhil/Downloads/Projects/RentEase/vendor/bundle/ruby/3.2.0/gems/hamlit-3.0.3/ext/hamlit
+make DESTDIR\= sitearchdir\=./.gem.20240616-5898-4lw8ai sitelibdir\=./.gem.20240616-5898-4lw8ai
+compiling hamlit.c
+compiling hescape.c
+linking shared-object hamlit/hamlit.so
+
+current directory: /home/nikhil/Downloads/Projects/RentEase/vendor/bundle/ruby/3.2.0/gems/hamlit-3.0.3/ext/hamlit
+make DESTDIR\= sitearchdir\=./.gem.20240616-5898-4lw8ai sitelibdir\=./.gem.20240616-5898-4lw8ai install
+/usr/bin/install -m 0755 hamlit.so ./.gem.20240616-5898-4lw8ai/hamlit
+
+current directory: /home/nikhil/Downloads/Projects/RentEase/vendor/bundle/ruby/3.2.0/gems/hamlit-3.0.3/ext/hamlit
+make DESTDIR\= sitearchdir\=./.gem.20240616-5898-4lw8ai sitelibdir\=./.gem.20240616-5898-4lw8ai clean

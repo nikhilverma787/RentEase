@@ -1,0 +1,19 @@
+current directory: /home/nikhil/Downloads/Projects/RentEase/vendor/bundle/ruby/3.2.0/gems/debug-1.9.2/ext/debug
+/home/nikhil/.rvm/rubies/ruby-3.2.2/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/nikhil/Downloads/Projects/RentEase/vendor/bundle/ruby/3.2.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20240616-5898-5vpegl sitelibdir\=./.gem.20240616-5898-5vpegl clean
+
+current directory: /home/nikhil/Downloads/Projects/RentEase/vendor/bundle/ruby/3.2.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20240616-5898-5vpegl sitelibdir\=./.gem.20240616-5898-5vpegl
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: /home/nikhil/Downloads/Projects/RentEase/vendor/bundle/ruby/3.2.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20240616-5898-5vpegl sitelibdir\=./.gem.20240616-5898-5vpegl install
+/usr/bin/install -m 0755 debug.so ./.gem.20240616-5898-5vpegl/debug
+
+current directory: /home/nikhil/Downloads/Projects/RentEase/vendor/bundle/ruby/3.2.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20240616-5898-5vpegl sitelibdir\=./.gem.20240616-5898-5vpegl clean
